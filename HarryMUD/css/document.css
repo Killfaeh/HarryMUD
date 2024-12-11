@@ -1,0 +1,168 @@
+.document
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+
+.document .macrosPanel,
+.document .gamePanel,
+.document .translatePanel
+{
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+}
+
+.document .macrosPanel
+{
+	left: 10px;
+	right: calc(100% - 350px);
+}
+
+.document .macrosPanel .macros
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 50px;
+	border: 1px solid rgb(120, 120, 120);
+	overflow: auto;
+}
+
+.document .macrosPanel .macros .macroRow
+{
+	position: relative;
+	cursor: pointer;
+}
+
+.document .macrosPanel .macros .macroRow .icons
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.document .macrosPanel .macros .macroRow .icons *
+{
+	margin: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.document .macrosPanel .addMacroIcon
+{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+
+.document .gamePanel
+{
+	left: 370px;
+	right: 10px;
+	right: 370px;
+}
+
+.document .gamePanel .console
+{
+	font-family: "Courier New", Courier, monospace; 
+	/*font-family: monospace;*/
+	font-size: 1.0em;
+	color: rgb(200, 200, 200);
+	border: 1px solid rgb(120, 120, 120);
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 50px;
+	text-align: left;
+	padding: 20px;
+	overflow: hidden;
+	overflow-y: auto;
+	background-color: rgb(40, 40, 40);
+}
+
+.document .commandBlock,
+.document .connectBlock
+{
+	position: absolute;
+	left: 10px;
+	right: 0px;
+	bottom: 0px;
+	height: 50px;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0px;
+	text-align: center;
+}
+
+.document .commandBlock *
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.document .commandBlock .commandInput
+{
+	width: calc(100% - 200px);
+}
+
+.document .connectBlock { display: none; }
+
+.document .translatePanel
+{
+	right: 10px;
+	left: calc(100% - 350px);
+}
+
+.document .translatePanel .translateConsole
+{
+	font-family: "Courier New", Courier, monospace; 
+	/*font-family: monospace;*/
+	font-size: 1.0em;
+	color: rgb(200, 200, 200);
+	border: 1px solid rgb(120, 120, 120);
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 50px;
+	text-align: left;
+	padding: 20px;
+	overflow: hidden;
+	overflow-y: auto;
+	background-color: rgb(40, 40, 40);
+}
+
+.document .translatePanel .translateBlock
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 50px;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0px;
+	text-align: center;
+}
+
+.document .translatePanel .translateBlock *
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.document .translatePanel .translateBlock .englishInput
+{
+	width: calc(100% - 170px);
+}

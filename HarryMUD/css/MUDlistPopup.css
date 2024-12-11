@@ -1,0 +1,75 @@
+.MUDlistPopup
+{
+	min-width: 500px;
+	min-height: 500px;
+}
+
+.MUDlistPopup h2
+{
+	margin-top: 20px;
+}
+
+.MUDlistPopup .popupCanvas
+{
+	margin: 10px;
+	white-space: nowrap;
+}
+
+.MUDlistPopup .MUDlist,
+.MUDlistPopup .MUDinfoPanel
+{
+	display: inline-block;
+	min-width: 300px;
+	min-height: 530px;
+	max-height: 530px;
+	margin: 10px;
+	padding: 0px;
+	border: solid 1px rgb(120, 120, 120);
+	overflow: hidden;
+}
+
+.MUDlistPopup .MUDlist .mudRow
+{
+	cursor: pointer;
+	position: relative;
+}
+
+.MUDlistPopup .MUDlist .mudRow .icons
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.MUDlistPopup .MUDlist .mudRow .icons *
+{
+	margin: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.MUDlistPopup .MUDinfoPanel
+{
+	min-width: 400px;
+	overflow-y: auto;
+}
+
+.MUDlistPopup .MUDinfo .labelCell
+{
+	text-align: left;
+}
+
+.MUDlistPopup .MUDinfo textarea
+{
+	resize: none;
+	width: 95%;
+	height: 100px;
+}
+
+.MUDlistPopup .addIcon
+{
+	position: absolute;
+	bottom: 5px;
+	left: 300px;
+	cursor: pointer;
+}
