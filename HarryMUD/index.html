@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+		<!-- Désactiver les comportements natifs indésirables des mobiles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name=“viewport” content=”initial-scale=1, viewport-fit=cover”>
+		
+		<title>Harry MUD</title>
+
+	</head>
+	
+	<!-- Racine du DOM, la présence de l'id "main" est obligatoire -->
+	<body id="main">
+
+		<!-- Zone d'écran principal de l'application, la présence de l'id "screen" est obligatoire -->
+		<div id="screen">
+			<p>Loading...</p>
+		</div>
+		
+		<!-- Chargement du Loader qui permet d'initialiser le framework ensuite -->
+		<script src='PeguyJS/Loader.js?token=0' ></script>
+		
+		<script>
+
+			var viewManager;
+
+			// Instanciation du Loader
+			var Loader = new Loader('', 'Peguy');
+			
+			Loader.addStyle('css/global.css', 'global');
+			
+			Loader.addScript('js/ViewManager.js?token=' + Loader.getToken(), 'viewManager');
+			Loader.addScript('js/MUDinfo.js?token=' + Loader.getToken(), 'MUDinfo');
+			Loader.addScript('js/encoding.js?token=' + Loader.getToken(), 'encoding');
+			
+			Loader.addComponent('css/settingsPopup.css', 'js/SettingsPopup.js', 'settingsPopup');
+			Loader.addComponent('css/MUDlistPopup.css', 'js/MUDlistPopup.js', 'MUDlistPopup');
+			Loader.addComponent('css/document.css', 'js/Document.js', 'document');
+			
+			// Redéfinir la fonction this.onload
+			Loader.onload = function()
+			{ 
+				Debug.consoleKey = 'Escape';
+				Debug.onError = function($message, $source, $lineno, $colno, $error) {};
+				
+				viewManager = new ViewManager();
+				viewManager.init();
+				document.getElementById('main').appendChild(viewManager);
+				viewManager.focus();
+			}; 
+			
+			// On ne lance le chargement du framework que lorsque la page HTML qui héberge l'application a fini de charger
+			window.onload = function()
+			{
+				Loader.load();
+			}; 
+
+		</script>
+		
+	</body>
+</html>
