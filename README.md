@@ -71,7 +71,7 @@ Run HarryMUD in a terminal.
 
 ## How to use
 
-When you start Harry MUD, you have an empty window with a settings menu.
+When you start Harry MUD, you have an empty window with a settings menu.</br>
 
 <div align="center">
 <img src="./doc/01-startScreen.png">
@@ -79,7 +79,7 @@ When you start Harry MUD, you have an empty window with a settings menu.
 
 **General settings**
 
-In general settings, you can choose the target language for automatic translation.
+In general settings, you can choose the target language for automatic translation.</br>
 
 <div align="center">
 <img src="./doc/02-generalSettings.png">
@@ -87,7 +87,21 @@ In general settings, you can choose the target language for automatic translatio
 
 **Add a MUD connection info and play**
 
-In the MUD library...
+In the MUD library you can add or select an existing MUD.</br>
+
+<div align="center">
+<img src="./doc/03-mudLibrary.png">
+</div></br>
+
+To add a MUD you have to click on the + button. Then you have to complete the fields.</br>
+
+<div align="center">
+<img src="./doc/04-mudInfo.png">
+</div></br>
+
+Then, you can choose to connect to the MUD with or without sending automatically your character login info.</br>
+
+Note : you can connect to several MUD at the same time. Each MUD will be desplayed in a dedicated tab.
 
 **Add a macro**
 
