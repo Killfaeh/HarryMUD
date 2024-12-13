@@ -142,7 +142,7 @@ In this example on the MUD Aardwolf, Harry MUD translate automatically the text 
 
 **Occasional translations**
 
-Some times you will need to translate some sentence or words which are not in auto translated blocks. </br>
+Some times you will need to translate some sentences or words which are not in auto translated blocks. </br>
 To translate them, you just have to copy paste them in the field at the right bottom and click on the "Translate" button.</br>
 
 <div align="center">
