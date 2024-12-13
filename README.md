@@ -105,7 +105,7 @@ Then, you can choose to connect to the MUD with or without sending automatically
 <img src="./doc/05-playScreen.png">
 </div></br>
 
-**Note :** you can connect to several MUD at the same time. Each MUD will be desplayed in a dedicated tab.
+**Note :** you can connect to several MUD at the same time. Each MUD will be displayed in a dedicated tab.
 
 **Add a macro**
 
