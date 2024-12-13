@@ -71,4 +71,14 @@ Run HarryMUD in a terminal.
 
 ## How to use
 
+**General settings**
+
+**Add a MUD connection info**
+
+**Add a macro**
+
+**Add auto translation pattern**
+
+**Occasional translations**
+
 Blablabla
