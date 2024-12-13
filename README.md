@@ -123,6 +123,28 @@ This feature is usefull to remember some unusual or complexe commands.</br>
 
 **Add auto translation pattern**
 
+Harry MUD doesn't translate all the game. It would become unreadable if it was the case.</br>
+You have to choose what part of the game to translate automatically by creating some pattern.</br>
+
+To create a translation pattern, click on the + button in the transalation settings tab.</br>
+
+<div align="center">
+<img src="./doc/07-translationPattern.png">
+</div></br>
+
+Then, enter a name in the first field, the start pattern in the second field and the end pattern in the third field.</br>
+
+In this example on the MUD Aardwolf, Harry MUD translate automatically the text between the string {rdesc} and the string {/rdesc}.</br>
+
+<div align="center">
+<img src="./doc/08-translationExemple.png">
+</div></br>
+
 **Occasional translations**
 
-Blablabla
+Some times you will need to translate some sentence or words which are not in auto translated blocks. </br>
+To translate them, you just have to copy paste them in the field at the right bottom and click on the "Translate" button.</br>
+
+<div align="center">
+<img src="./doc/09-occasionalTranslation.png">
+</div>
