@@ -8,7 +8,7 @@ The name HarryMUD is a reference to the Star Trek character Harry Mudd.
 
 1. [Installation](#installation)
 2. [How to use](#how-to-use)
-3. [Where to find MUDs](#where-to-find-muds)
+3. [Where to find MUD games](#where-to-find-mud-games)
 
 ## Installation
 
@@ -152,7 +152,7 @@ To translate them, you just have to copy paste them in the field at the right bo
 <img src="./doc/09-occasionalTranslation.png">
 </div>
 
-## Where to find MUDs
+## Where to find MUD games
 
 [The Mud Connector](https://mudconnect.com/)</br>
 [MUD Listings](https://mudlistings.com/)</br>
