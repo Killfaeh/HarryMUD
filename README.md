@@ -10,7 +10,7 @@ Harry MUD is an interface for connecting to your favorite MUDs.  It lets you fil
 
 ### Install Node.js
 
-You need to install Node.js to run Péguy Editor.
+You need to install Node.js to run Harry MUD.
 
 **Windows**
 
@@ -56,17 +56,17 @@ Archive content
 
 **Windows**
 
-If you run Péguy Editor for the first time, run install.bat (double clic).</br>
-Then, run PeguyEditor.bat (double clic).
+If you run Harry MUD for the first time, run install.bat (double click).</br>
+Then, run HarryMUD.bat (double click).
 
 **Mac OS**
 
-Run PeguyEditor.app (double clic).</br>
-You can put PeguyEditor.app in your dock.
+Run HarryMUD.app (double click).</br>
+You can put HarryMUD.app in your dock.
 
 **Linux**
 
-Run PeguyEditor in a terminal.
+Run HarryMUD in a terminal.
 
 ## How to use
 
