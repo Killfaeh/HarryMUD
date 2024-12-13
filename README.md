@@ -79,7 +79,7 @@ When you start Harry MUD, you have an empty window with a settings menu.</br>
 <img src="./doc/01-startScreen.png">
 </div>
 
-**General settings**
+### General settings
 
 In general settings, you can choose the target language for automatic translation.</br>
 
@@ -87,7 +87,7 @@ In general settings, you can choose the target language for automatic translatio
 <img src="./doc/02-generalSettings.png">
 </div>
 
-**Add a MUD connection info and play**
+### Add a MUD connection info and play
 
 In the MUD library you can add or select an existing MUD.</br>
 
@@ -109,7 +109,7 @@ Then, you can choose to connect to the MUD with or without sending automatically
 
 **Note :** you can connect to several MUD at the same time. Each MUD will be displayed in a dedicated tab.
 
-**Add a macro**
+### Add a macro
 
 To add a macro, you have to click on the + button in the macros tab.</br>
 
@@ -123,7 +123,7 @@ Then, to run the macro, just click on it in the macros list.</br>
 This feature is usefull to remember some unusual or complexe commands.</br>
 **/!\ Don't try to create bots with it ! /!\\**
 
-**Add auto translation pattern**
+### Add auto translation pattern
 
 Harry MUD doesn't translate all the game. It would become unreadable if it was the case.</br>
 You have to choose what part of the game to translate automatically by creating some pattern.</br>
@@ -142,7 +142,7 @@ In this example on the MUD Aardwolf, Harry MUD translate automatically the text 
 <img src="./doc/08-translationExemple.png">
 </div></br>
 
-**Occasional translations**
+### Occasional translations
 
 Some times you will need to translate some sentences or words which are not in auto translated blocks. </br>
 To translate them, you just have to copy paste them in the field at the right bottom and click on the "Translate" button.</br>
