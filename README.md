@@ -119,7 +119,7 @@ Enter a name in the first field and the commands list in the second field. Comma
 Then, to run the macro, just click on it in the macros list.</br>
 
 This feature is usefull to remember some unusual or complexe commands.</br>
-**/!\ Don't try to create bots with it ! /!\**
+**/!\ Don't try to create bots with it ! /!\\**
 
 **Add auto translation pattern**
 
