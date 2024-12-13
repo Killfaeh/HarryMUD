@@ -71,9 +71,23 @@ Run HarryMUD in a terminal.
 
 ## How to use
 
+When you start Harry MUD, you have an empty window with a settings menu.
+
+<div align="center">
+<img src="./doc/01-startScreen.png">
+</div>
+
 **General settings**
 
-**Add a MUD connection info**
+In general settings, you can choose the target language for automatic translation.
+
+<div align="center">
+<img src="./doc/02-generalSettings.png">
+</div>
+
+**Add a MUD connection info and play**
+
+In the MUD library...
 
 **Add a macro**
 
