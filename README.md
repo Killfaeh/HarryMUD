@@ -1,6 +1,8 @@
 # Harry MUD
 Harry MUD is an interface based on [Electron](https://www.electronjs.org/), [Péguy.js](https://github.com/Killfaeh/Peguy.js) and [Google Translate](https://translate.google.fr/?hl=fr&sl=auto&tl=fr&op=translate) for connecting to your favorite MUDs.</br>
-It lets you fill a library of MUDs with your login details, so you can quickly connect to them.  You can also save small macros and string patterns to automate the translation of some game parts. The name HarryMUD is a reference to the Star Trek character Harry Mudd.
+It features a library that you can customize with your favorite MUD login info.</br>
+You can also save small macros and string patterns to automate the translation of some game parts.</br>
+The name HarryMUD is a reference to the Star Trek character Harry Mudd.
 
 ## Table of Contents
 
