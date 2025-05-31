@@ -66,13 +66,13 @@ Then, run HarryMUD.bat as administrator.
 
 **Mac OS**
 
-If you run Harry MUD for the first time, run Install.app (double clic). 
+If you run Harry MUD for the first time, run Install.app (double clic). </br>
 Run HarryMUD.app (double clic).</br>
 You can put HarryMUD.app in your dock.
 
 **Linux**
 
-If you run Harry MUD for the first time, run Install in a console. 
+If you run Harry MUD for the first time, run Install in a console. </br>
 Run Harry MUD in a console.
 
 ## How to use
