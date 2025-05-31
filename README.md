@@ -60,18 +60,20 @@ Archive content
 
 **Windows**
 
-If you run Harry MUD for the first time, run install.bat (double click). 
+If you run Harry MUD for the first time, run install.bat as administrator. 
 A DOS console appears, with a small rotating bar in the top left corner, then disappears when installation is complete.</br>
-Then, run HarryMUD.bat (double click).
+Then, run HarryMUD.bat as administrator.
 
 **Mac OS**
 
-Run HarryMUD.app (double click).</br>
+If you run Harry MUD for the first time, run Install.app (double clic). 
+Run HarryMUD.app (double clic).</br>
 You can put HarryMUD.app in your dock.
 
 **Linux**
 
-Run HarryMUD in a terminal.
+If you run Harry MUD for the first time, run Install in a console. 
+Run Harry MUD in a console.
 
 ## How to use
 
