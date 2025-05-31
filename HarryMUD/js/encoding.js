@@ -72,6 +72,7 @@ var HTML =
 	"BACKGROUND_WHITE": "<span style=\"background-color: rgb(200, 200, 200); \" >" 
 }; 
 
+/*
 String.prototype.replaceAll = function($search, $replacement)
 {
 	var target = this;
@@ -81,6 +82,7 @@ String.prototype.replaceAll = function($search, $replacement)
 	
 	return target;
 };
+//*/
 
 var HTMLtoANSI = function($input)
 {
