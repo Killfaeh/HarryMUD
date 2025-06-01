@@ -432,6 +432,51 @@ function Document($connectInfo)
 		window.electronAPI.saveTranslationSettings(connectInfo.id, translationSettingsToSave);
 	};
 
+	var previousCommand = function()
+	{
+		if (previousCommands.length > 0)
+        {
+            commandsCursor--; 
+                    
+            if (commandsCursor < 0)
+                commandsCursor = 0; 
+                    
+            if (setTmpCommand === false)
+            {
+                tmpCommand = component.getById('command').value; 
+                setTmpCommand = true; 
+            }
+                    
+            component.getById('command').value = previousCommands[commandsCursor]; 
+        }
+	};
+
+	var nextCommand = function()
+	{
+		if (previousCommands.length > 0)
+        {
+            commandsCursor++; 
+                    
+            if (commandsCursor > previousCommands.length)
+                commandsCursor = previousCommands.length; 
+                    
+            if (commandsCursor >= previousCommands.length)
+            {
+                if (tmpCommand === "")
+                {
+                    commandsCursor = previousCommands.length-1; 
+                    component.getById('command').value = previousCommands[commandsCursor]; 
+                }
+                else
+					component.getById('command').value = tmpCommand; 
+            }
+            else
+				component.getById('command').value = previousCommands[commandsCursor]; 
+                        
+            //console.log("Nombre de commandes : " + previousCommands.length + ", Curseur : " + commandsCursor + ", tmp commande : " + tmpCommand); 
+        }
+	};
+
 	////////////////////////////
 	// Gestion des événements //
 	////////////////////////////
@@ -512,48 +557,9 @@ function Document($connectInfo)
 		if ($event.keyCode === 13)
 			sendCommand(component.getById('command').value);
         else if ($event.keyCode === 38)
-        {
-            if (previousCommands.length > 0)
-            {
-                commandsCursor--; 
-                    
-                if (commandsCursor < 0)
-                    commandsCursor = 0; 
-                    
-                if (setTmpCommand === false)
-                {
-                    tmpCommand = component.getById('command').value; 
-                    setTmpCommand = true; 
-                }
-                    
-                component.getById('command').value = previousCommands[commandsCursor]; 
-            }
-        }
+            previousCommand();
         else if ($event.keyCode === 40)
-        {
-            if (previousCommands.length > 0)
-            {
-                commandsCursor++; 
-                    
-                if (commandsCursor > previousCommands.length)
-                    commandsCursor = previousCommands.length; 
-                    
-                if (commandsCursor >= previousCommands.length)
-                {
-                    if (tmpCommand === "")
-                    {
-                        commandsCursor = previousCommands.length-1; 
-                        component.getById('command').value = previousCommands[commandsCursor]; 
-                    }
-                    else
-					component.getById('command').value = tmpCommand; 
-                }
-                else
-					component.getById('command').value = previousCommands[commandsCursor]; 
-                        
-                //console.log("Nombre de commandes : " + previousCommands.length + ", Curseur : " + commandsCursor + ", tmp commande : " + tmpCommand); 
-            }
-        }
+            nextCommand();
 	};
 
 	this.onKeyUp = function($event)
@@ -561,6 +567,23 @@ function Document($connectInfo)
 		console.log("DOC KEYUP");
 		console.log($event.keyCode);
 	};
+
+	component.getById('command').addEvent("keydown", function($event)
+	{
+		if (window.event)
+			$event = window.event;
+
+		if ($event.keyCode === 38)
+		{
+			Events.preventDefault($event);
+            previousCommand();
+		}
+        else if ($event.keyCode === 40)
+		{
+			Events.preventDefault($event);
+            nextCommand();
+		}
+	});
 
 	component.getById('sendCommand').onClick = function() { sendCommand(component.getById('command').value); };
 	component.getById('reconnect').onClick = function() { window.electronAPI.reconnect(connectInfo.id); };
