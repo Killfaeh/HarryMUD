@@ -4,6 +4,8 @@ It features a library that you can customize with your favorite MUD login info.<
 You can also save small macros and string patterns to automate the translation of some game parts.</br>
 The name HarryMUD is a reference to the Star Trek character Harry Mudd.
 
+Tested on macOS Sonoma 14, Windows 10 and Ubuntu 20
+
 ## Table of Contents
 
 1. [Installation](#installation)
