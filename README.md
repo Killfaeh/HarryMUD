@@ -4,6 +4,8 @@ It features a library that you can customize with your favorite MUD login info.<
 You can also save small macros and string patterns to automate the translation of some game parts.</br>
 The name HarryMUD is a reference to the Star Trek character Harry Mudd.
 
+Tested on macOS Sonoma 14, Windows 10 and Ubuntu 20
+
 ## Table of Contents
 
 1. [Installation](#installation)
@@ -48,7 +50,7 @@ sudo apt install npm
 
 ### Download and extract the archive
 
-Download the project archive via this Google Drive link : [https://drive.google.com/file/d/1OXW6wB7KYMFIPXw6VUCCSi21cMLnyK7D/view?usp=sharing](https://drive.google.com/file/d/1OXW6wB7KYMFIPXw6VUCCSi21cMLnyK7D/view?usp=sharing) </br>
+Download the project archive via this Google Drive link : [https://drive.google.com/file/d/1wrRodKdXx58QwnrGIYE7FI-Ne7qb51JA/view?usp=sharing](https://drive.google.com/file/d/1wrRodKdXx58QwnrGIYE7FI-Ne7qb51JA/view?usp=sharing)</br>
 Then, extract it.
 
 <div align="center">
